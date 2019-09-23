@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<body>
+	<header>
+		<div class="row clearfix">
+		<img src="images/sq1.png" class="square1"></div>
+	</header>
+
+
+
+	<fieldset class="abc">
+		<form align="center">
+			<font size="25"><b>Name: </b></font><input type="text" onfocus="a(this)" onblur="b(this)" class="form-control"></br></br>
+			<font size="25"><b>Card Number:</b><input type="numeric" maxlength="5" onfocus="a(this)" onblur="b(this)" class="form-control"></br></font>
+			<font size="25"><b>Recharge Amount:</b> <input type="numeric" onfocus="a(this)" onblur="b(this)" class="form-control"></br></font>
+			<button type="submit" value="SUBMIT" id="one" ><a href="#">SUBMIT</a></button>
+			<button type="submit"><a href="index.html" >HOME</a></button>
+		</form>
+		</fieldset>
+	</body></html>
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+	function a(x)
+	{
+x.style.background= "orange";
+	}
+	function b(x)
+	{
+x.style.background="white";
+	}
+	$(document).ready(function()
+	{
+		$("button#one").click(function()
+		{
+			alert("Your Account Has Been Updated");
+		});
+	});
+</script>
+<style>	
+	.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  }
+  .abc
+{
+	position: absolute;
+	border: 3px solid black;
+	top: 40%;
+	left: 45%;
+	transform: translate(-20%,-20%);
+
+
+
+}
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("images/food8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+</style>
+</head>
+
